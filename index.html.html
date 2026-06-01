@@ -494,7 +494,7 @@ function setView(v) {
   currentView=v;
   document.getElementById('boardView').style.display=v==='board'?'block':'none';
   document.getElementById('listView').style.display=v==='list'?'block':'none';
-  document.getElementById('topbar-title').textContent=v==='board'?'Zone Board':'All Sites';
+  document.getElementById('topbar-title').textContent=v==='board'?'Daily Update North and West Zone':'All Sites';
   ['board','list'].forEach(x=>document.getElementById('nav-'+x)?.classList.remove('active'));
   document.getElementById('nav-'+v)?.classList.add('active');
   render();
